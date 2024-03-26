@@ -46,15 +46,20 @@ namespace Calculator_HomeWork1
             return numbers[0];
         }
 
-        public static int Calculate(int left, int right, char op)
+        private static int Calculate(int left, int right, char op)
         {
             switch (op)
             {
-                case '*': return left * right;
-                case '/': return left / right;
-                case '+': return left + right;
-                case '-': return left - right;
-                default: throw new NotSupportedException("Неподдерживаемый оператор");
+                case '*': 
+                    return left * right;
+                case '/': 
+                    return left / right;
+                case '+': 
+                    return left + right;
+                case '-': 
+                    return left - right;
+                default: 
+                    throw new NotSupportedException("Неподдерживаемый оператор");
             }
         }
 
